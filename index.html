@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Todos</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/my-style.css">
+    <script src="https://kit.fontawesome.com/26ce59d487.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="clear" id='clear-all'>
+          <i class="fa fa-refresh"></i>
+        </div>
+        <div id="date">20 october</div>
+      </div>
+
+      <div class="content">
+        <ul id='todo-list'>
+
+
+        </ul>
+
+        <div class="add-item">
+          <i class="fa fa-plus-circle add-todo-btn"></i>
+          <input id="input" type="text" name="" value="" placeholder="Add todo">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="content-wrapper">
+        <div class="modal-content">
+          <h3>Barcha Todolarni o'chirmoqchimisiz ?</h3>
+          <div class="buttons">
+            <button type="button" name="button" class="red">Ha</button>
+            <button type="button" name="button" class="green">Yo'q</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Design by <a href="https://youtu.be/b8sUhU_eq3g">this link</a>
+      </p>
+      <p>Code by OlimovS</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

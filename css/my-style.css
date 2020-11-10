@@ -1,0 +1,217 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  background-color: rgb(219, 255, 250);
+}
+
+ul {
+  font-family: inherit;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+/* Icons */
+.delete,
+.complete {
+  cursor: pointer;
+}
+.delete {
+  color: #860606;
+}
+.delete:hover {
+  color: red;
+}
+.checked {
+  color: #048c1e;
+}
+.clear {
+  cursor: pointer;
+}
+/* General classes */
+.done-todo-text {
+  text-decoration: line-through;
+  color: darkslategrey;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 370px;
+  height: calc(100vh - 40px);
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px -3px black;
+
+  background-color: white;
+  margin: 20px auto auto;
+}
+
+/*==============>  Header section <===================*/
+.header {
+  border-radius: 8px 8px 0px 0px;
+  height: 180px;
+  background-image: url('../img/bg.jpg');
+  position: relative;
+}
+
+.clear {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 14px;
+  font-size: 1.7em;
+  color: white;
+}
+.clear span {
+  font-size: initial;
+}
+
+#date {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.7em;
+  color: white;
+  padding: 14px;
+}
+
+
+/*==============>  Content section <===================*/
+.content {
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+}
+#todo-list {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f6f6f6;
+}
+/* === Add todo smallsection */
+.add-item {
+  padding: 10px;
+  padding-bottom: 20px;
+  flex-basis: 40px;
+  display: flex;
+  align-items: center;
+}
+.add-item i {
+  font-size: 2em;
+  margin-right: 10px;
+  color: #0953a1;
+}
+
+#input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  flex: 1;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* === list smallsection */
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  font-family: 'Font Awesome 5 Free';
+}
+li p {
+  font-size: 1.1rem;
+  flex: 1;
+  margin: 0px 8px;
+}
+
+/* =========================== Modal section */
+.modal {
+  display: none;
+  animation: all 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.44);
+}
+
+.content-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  min-height: 100px;
+  width: 200px;
+  padding: 20px;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 4px;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.modal-content .buttons {
+  display: flex;
+  justify-content: center;
+}
+.modal-content button {
+  color: #eeeeee;
+  border-radius: 3px;
+  padding: 4px 20px;
+  outline: none;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+.modal-content button.red {
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.modal-content button.green {
+  background-color: rgb(7, 134, 0);
+  border: 1px solid rgb(7, 134, 0);
+}
+
+.modal-content .red:hover {
+  background-color: rgb(218, 5, 5);
+  border: 1px solid rgb(218, 5, 5);
+
+}
+.modal-content .green:hover {
+  background-color: rgb(8, 92, 2);
+  border: 1px solid rgb(8, 92, 2);
+}
+
+
+/* ================== footer */
+.footer {
+  font-size: 0.9rem;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgb(219, 255, 250), rgb(15, 215, 188) );
+  color: rgba(0, 0, 0, 0.9);
+  padding: 12px 8px;
+  margin-top: 20px;
+}
+
+.footer p {
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.footer a {
+  color: inherit;
+  font-size: 0.9rem;
+}
